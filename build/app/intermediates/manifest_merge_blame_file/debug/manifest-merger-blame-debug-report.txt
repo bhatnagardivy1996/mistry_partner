@@ -1,0 +1,525 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.Themistry.Service"
+4    android:versionCode="6"
+5    android:versionName="1.6.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\hp\Videos\divy\mistry\mistry_partner\android\app\src\main\AndroidManifest.xml:4:5-66
+15-->C:\Users\hp\Videos\divy\mistry\mistry_partner\android\app\src\main\AndroidManifest.xml:4:22-64
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->C:\Users\hp\Videos\divy\mistry\mistry_partner\android\app\src\main\AndroidManifest.xml:5:5-78
+16-->C:\Users\hp\Videos\divy\mistry\mistry_partner\android\app\src\main\AndroidManifest.xml:5:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->C:\Users\hp\Videos\divy\mistry\mistry_partner\android\app\src\main\AndroidManifest.xml:6:5-80
+17-->C:\Users\hp\Videos\divy\mistry\mistry_partner\android\app\src\main\AndroidManifest.xml:6:22-78
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->C:\Users\hp\Videos\divy\mistry\mistry_partner\android\app\src\main\AndroidManifest.xml:7:5-78
+18-->C:\Users\hp\Videos\divy\mistry\mistry_partner\android\app\src\main\AndroidManifest.xml:7:22-76
+19    <uses-permission android:name="android.permission.VIBRATE" />
+19-->C:\Users\hp\Videos\divy\mistry\mistry_partner\android\app\src\main\AndroidManifest.xml:8:5-65
+19-->C:\Users\hp\Videos\divy\mistry\mistry_partner\android\app\src\main\AndroidManifest.xml:8:22-63
+20    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permissions options for the `notification` group -->
+20-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-68
+20-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-65
+21    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+21-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-77
+21-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-74
+22    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+22-->[:geolocator_android] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-77
+22-->[:geolocator_android] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-74
+23
+24    <queries>
+24-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-25:15
+25        <package android:name="com.google.android.apps.maps" />
+25-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-64
+25-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-61
+26        <package android:name="com.google.android.apps.mapslite" />
+26-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-68
+26-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:11:18-65
+27        <package android:name="com.autonavi.minimap" />
+27-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-56
+27-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:12:18-53
+28        <package android:name="com.baidu.BaiduMap" />
+28-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-54
+28-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:13:18-51
+29        <package android:name="com.waze" />
+29-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-44
+29-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:14:18-41
+30        <package android:name="ru.yandex.yandexnavi" />
+30-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-56
+30-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:15:18-53
+31        <package android:name="ru.yandex.yandexmaps" />
+31-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-56
+31-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:16:18-53
+32        <package android:name="com.citymapper.app.release" />
+32-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:17:9-62
+32-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:17:18-59
+33        <package android:name="com.mapswithme.maps.pro" />
+33-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-59
+33-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:18:18-56
+34        <package android:name="net.osmand" />
+34-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:19:9-46
+34-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:19:18-43
+35        <package android:name="net.osmand.plus" />
+35-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-51
+35-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:20:18-48
+36        <package android:name="ru.dublgis.dgismobile" />
+36-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-57
+36-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:21:18-54
+37        <package android:name="com.tencent.map" />
+37-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:22:9-51
+37-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:22:18-48
+38        <package android:name="com.here.app.maps" />
+38-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:23:9-53
+38-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:23:18-50
+39        <package android:name="com.huawei.maps.app" />
+39-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:24:9-55
+39-->[:map_launcher] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:24:18-52
+40    </queries>
+41
+42    <uses-feature
+42-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\hp\.gradle\caches\transforms-3\876a6f06a6ec12de037385454ac16ed3\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+43        android:glEsVersion="0x00020000"
+43-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\hp\.gradle\caches\transforms-3\876a6f06a6ec12de037385454ac16ed3\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+44        android:required="true" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+44-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\hp\.gradle\caches\transforms-3\876a6f06a6ec12de037385454ac16ed3\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+45    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+45-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hp\.gradle\caches\transforms-3\bf848454c8f48a925dac05239b154542\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:28:5-82
+45-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hp\.gradle\caches\transforms-3\bf848454c8f48a925dac05239b154542\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:28:22-79
+46
+47    <permission
+47-->[androidx.core:core:1.9.0] C:\Users\hp\.gradle\caches\transforms-3\54b8a8420455f4e3b082b0b36cb711a7\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+48        android:name="com.Themistry.Service.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+48-->[androidx.core:core:1.9.0] C:\Users\hp\.gradle\caches\transforms-3\54b8a8420455f4e3b082b0b36cb711a7\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+49        android:protectionLevel="signature" />
+49-->[androidx.core:core:1.9.0] C:\Users\hp\.gradle\caches\transforms-3\54b8a8420455f4e3b082b0b36cb711a7\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+50
+51    <uses-permission android:name="com.Themistry.Service.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+51-->[androidx.core:core:1.9.0] C:\Users\hp\.gradle\caches\transforms-3\54b8a8420455f4e3b082b0b36cb711a7\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+51-->[androidx.core:core:1.9.0] C:\Users\hp\.gradle\caches\transforms-3\54b8a8420455f4e3b082b0b36cb711a7\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+52
+53    <application
+54        android:name="android.app.Application"
+55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+55-->[androidx.core:core:1.9.0] C:\Users\hp\.gradle\caches\transforms-3\54b8a8420455f4e3b082b0b36cb711a7\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+56        android:debuggable="true"
+57        android:icon="@drawable/icon"
+58        android:label="The Mistry - Partner" >
+59        <meta-data
+60            android:name="com.google.android.geo.API_KEY"
+61            android:value="AIzaSyDdyth2EiAjU9m9eE_obC5fnTY1yeVNTJU" />
+62
+63        <activity
+64            android:name="com.example.themistryapp.MainActivity"
+65            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+66            android:exported="true"
+67            android:hardwareAccelerated="true"
+68            android:launchMode="singleTop"
+69            android:theme="@style/LaunchTheme"
+70            android:windowSoftInputMode="adjustResize" >
+71
+72            <!--
+73                 Specifies an Android theme to apply to this Activity as soon as
+74                 the Android process has started. This theme is visible to the user
+75                 while the Flutter UI initializes. After that, this theme continues
+76                 to determine the Window background behind the Flutter UI.
+77            -->
+78            <meta-data
+79                android:name="io.flutter.embedding.android.NormalTheme"
+80                android:resource="@style/NormalTheme" />
+81
+82            <intent-filter>
+83                <action android:name="android.intent.action.MAIN" />
+84
+85                <category android:name="android.intent.category.LAUNCHER" />
+86            </intent-filter>
+87            <intent-filter>
+88                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+89
+90                <category android:name="android.intent.category.DEFAULT" />
+90-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:38:17-76
+90-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:38:27-73
+91            </intent-filter>
+92        </activity>
+93        <!--
+94             Don't delete the meta-data below.
+95             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+96        -->
+97        <meta-data
+98            android:name="flutterEmbedding"
+99            android:value="2" />
+100
+101        <service
+101-->[:cloud_firestore] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+102            android:name="com.google.firebase.components.ComponentDiscoveryService"
+102-->[:cloud_firestore] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+103            android:directBootAware="true"
+103-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hp\.gradle\caches\transforms-3\b2335371e5c89d5344e384de4531f59a\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+104            android:exported="false" >
+104-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:68:13-37
+105            <meta-data
+105-->[:cloud_firestore] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+106                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+106-->[:cloud_firestore] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[:cloud_firestore] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+108            <meta-data
+108-->[:firebase_auth] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+109                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+109-->[:firebase_auth] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[:firebase_auth] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+111            <meta-data
+111-->[:firebase_storage] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+112                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+112-->[:firebase_storage] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-126
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[:firebase_storage] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+114            <meta-data
+114-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-40:85
+115                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+115-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:39:17-128
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:40:17-82
+117            <meta-data
+117-->[:firebase_core] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+118                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+118-->[:firebase_core] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[:firebase_core] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+120            <meta-data
+120-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:69:13-71:85
+121                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+121-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:70:17-109
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:71:17-82
+123            <meta-data
+123-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hp\.gradle\caches\transforms-3\bf848454c8f48a925dac05239b154542\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:55:13-57:85
+124                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+124-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hp\.gradle\caches\transforms-3\bf848454c8f48a925dac05239b154542\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:56:17-119
+125                android:value="com.google.firebase.components.ComponentRegistrar" />
+125-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hp\.gradle\caches\transforms-3\bf848454c8f48a925dac05239b154542\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:57:17-82
+126            <meta-data
+126-->[com.google.firebase:firebase-firestore:24.5.0] C:\Users\hp\.gradle\caches\transforms-3\3fd5313f4fd5f8f148ff3936a1c7369c\transformed\jetified-firebase-firestore-24.5.0\AndroidManifest.xml:19:13-21:85
+127                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+127-->[com.google.firebase:firebase-firestore:24.5.0] C:\Users\hp\.gradle\caches\transforms-3\3fd5313f4fd5f8f148ff3936a1c7369c\transformed\jetified-firebase-firestore-24.5.0\AndroidManifest.xml:20:17-111
+128                android:value="com.google.firebase.components.ComponentRegistrar" />
+128-->[com.google.firebase:firebase-firestore:24.5.0] C:\Users\hp\.gradle\caches\transforms-3\3fd5313f4fd5f8f148ff3936a1c7369c\transformed\jetified-firebase-firestore-24.5.0\AndroidManifest.xml:21:17-82
+129            <meta-data
+129-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\hp\.gradle\caches\transforms-3\d87bb7b941d679bc59f048b0ebcbdc90\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:32:13-34:85
+130                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+130-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\hp\.gradle\caches\transforms-3\d87bb7b941d679bc59f048b0ebcbdc90\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:33:17-107
+131                android:value="com.google.firebase.components.ComponentRegistrar" />
+131-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\hp\.gradle\caches\transforms-3\d87bb7b941d679bc59f048b0ebcbdc90\transformed\jetified-firebase-storage-20.1.0\AndroidManifest.xml:34:17-82
+132            <meta-data
+132-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\hp\.gradle\caches\transforms-3\d3b6babd6938bbfacaad1ff5cccfe90d\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+133                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+133-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\hp\.gradle\caches\transforms-3\d3b6babd6938bbfacaad1ff5cccfe90d\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+134                android:value="com.google.firebase.components.ComponentRegistrar" />
+134-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\hp\.gradle\caches\transforms-3\d3b6babd6938bbfacaad1ff5cccfe90d\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+135            <meta-data
+135-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\hp\.gradle\caches\transforms-3\19aabc4b33b23e288bd737bfc2d71922\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+136                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+136-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\hp\.gradle\caches\transforms-3\19aabc4b33b23e288bd737bfc2d71922\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+137                android:value="com.google.firebase.components.ComponentRegistrar" />
+137-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\hp\.gradle\caches\transforms-3\19aabc4b33b23e288bd737bfc2d71922\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+138            <meta-data
+138-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\hp\.gradle\caches\transforms-3\8d8722449c8eedf64e33ce74e944ca67\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+139                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+139-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\hp\.gradle\caches\transforms-3\8d8722449c8eedf64e33ce74e944ca67\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+140                android:value="com.google.firebase.components.ComponentRegistrar" />
+140-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\hp\.gradle\caches\transforms-3\8d8722449c8eedf64e33ce74e944ca67\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+141        </service>
+142        <service
+142-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-19:72
+143            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+143-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-107
+144            android:exported="false"
+144-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+145            android:permission="android.permission.BIND_JOB_SERVICE" />
+145-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-69
+146        <service
+146-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-26:19
+147            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+147-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-97
+148            android:exported="false" >
+148-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
+149            <intent-filter>
+149-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+150                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+150-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+150-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+151            </intent-filter>
+152        </service>
+153
+154        <receiver
+154-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-35:20
+155            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+155-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-98
+156            android:exported="true"
+156-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-36
+157            android:permission="com.google.android.c2dm.permission.SEND" >
+157-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-73
+158            <intent-filter>
+158-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+159                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+159-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+159-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+160            </intent-filter>
+161        </receiver>
+162
+163        <provider
+163-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:9-47:38
+164            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+164-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-102
+165            android:authorities="com.Themistry.Service.flutterfirebasemessaginginitprovider"
+165-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-88
+166            android:exported="false"
+166-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-37
+167            android:initOrder="99" />
+167-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-35
+168
+169        <service
+169-->[:geolocator_android] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-16:56
+170            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+170-->[:geolocator_android] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-77
+171            android:enabled="true"
+171-->[:geolocator_android] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-35
+172            android:exported="false"
+172-->[:geolocator_android] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-37
+173            android:foregroundServiceType="location" />
+173-->[:geolocator_android] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-53
+174
+175        <provider
+175-->[:image_picker_android] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+176            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+176-->[:image_picker_android] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-82
+177            android:authorities="com.Themistry.Service.flutter.image_provider"
+177-->[:image_picker_android] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
+178            android:exported="false"
+178-->[:image_picker_android] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+179            android:grantUriPermissions="true" >
+179-->[:image_picker_android] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+180            <meta-data
+180-->[:image_picker_android] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
+181                android:name="android.support.FILE_PROVIDER_PATHS"
+181-->[:image_picker_android] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+182                android:resource="@xml/flutter_image_picker_file_paths" />
+182-->[:image_picker_android] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
+183        </provider>
+184
+185        <activity
+185-->[:url_launcher_android] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+186            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+186-->[:url_launcher_android] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+187            android:exported="false"
+187-->[:url_launcher_android] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+188            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+188-->[:url_launcher_android] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+189
+190        <service
+190-->[:location] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-17:56
+191            android:name="com.lyokone.location.FlutterLocationService"
+191-->[:location] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-71
+192            android:enabled="true"
+192-->[:location] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-35
+193            android:exported="false"
+193-->[:location] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+194            android:foregroundServiceType="location" />
+194-->[:location] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-53
+195
+196        <activity
+196-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:29:9-46:20
+197            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+197-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:30:13-80
+198            android:excludeFromRecents="true"
+198-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:31:13-46
+199            android:exported="true"
+199-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:32:13-36
+200            android:launchMode="singleTask"
+200-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:33:13-44
+201            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+201-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:34:13-72
+202            <intent-filter>
+202-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:35:13-45:29
+203                <action android:name="android.intent.action.VIEW" />
+203-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:36:17-69
+203-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:36:25-66
+204
+205                <category android:name="android.intent.category.DEFAULT" />
+205-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:38:17-76
+205-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:38:27-73
+206                <category android:name="android.intent.category.BROWSABLE" />
+206-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:39:17-78
+206-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:39:27-75
+207
+208                <data
+208-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:41:17-44:51
+209                    android:host="firebase.auth"
+209-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:42:21-49
+210                    android:path="/"
+210-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:43:21-37
+211                    android:scheme="genericidp" />
+211-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:44:21-48
+212            </intent-filter>
+213        </activity>
+214        <activity
+214-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:47:9-64:20
+215            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+215-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:48:13-79
+216            android:excludeFromRecents="true"
+216-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:49:13-46
+217            android:exported="true"
+217-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:50:13-36
+218            android:launchMode="singleTask"
+218-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:51:13-44
+219            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+219-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:52:13-72
+220            <intent-filter>
+220-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:53:13-63:29
+221                <action android:name="android.intent.action.VIEW" />
+221-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:36:17-69
+221-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:36:25-66
+222
+223                <category android:name="android.intent.category.DEFAULT" />
+223-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:38:17-76
+223-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:38:27-73
+224                <category android:name="android.intent.category.BROWSABLE" />
+224-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:39:17-78
+224-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:39:27-75
+225
+226                <data
+226-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:41:17-44:51
+227                    android:host="firebase.auth"
+227-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:42:21-49
+228                    android:path="/"
+228-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:43:21-37
+229                    android:scheme="recaptcha" />
+229-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\hp\.gradle\caches\transforms-3\afd7febb1fa1070be77a8ab0c4869c73\transformed\jetified-firebase-auth-21.3.0\AndroidManifest.xml:44:21-48
+230            </intent-filter>
+231        </activity> <!-- Needs to be explicitly declared on P+ -->
+232        <uses-library
+232-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\hp\.gradle\caches\transforms-3\876a6f06a6ec12de037385454ac16ed3\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+233            android:name="org.apache.http.legacy"
+233-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\hp\.gradle\caches\transforms-3\876a6f06a6ec12de037385454ac16ed3\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+234            android:required="false" />
+234-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\hp\.gradle\caches\transforms-3\876a6f06a6ec12de037385454ac16ed3\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+235
+236        <receiver
+236-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hp\.gradle\caches\transforms-3\bf848454c8f48a925dac05239b154542\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:31:9-38:20
+237            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+237-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hp\.gradle\caches\transforms-3\bf848454c8f48a925dac05239b154542\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:32:13-78
+238            android:exported="true"
+238-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hp\.gradle\caches\transforms-3\bf848454c8f48a925dac05239b154542\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:33:13-36
+239            android:permission="com.google.android.c2dm.permission.SEND" >
+239-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hp\.gradle\caches\transforms-3\bf848454c8f48a925dac05239b154542\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:34:13-73
+240            <intent-filter>
+240-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+241                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+241-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+241-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+242            </intent-filter>
+243        </receiver>
+244        <!--
+245             FirebaseMessagingService performs security checks at runtime,
+246             but set to not exported to explicitly avoid allowing another app to call it.
+247        -->
+248        <service
+248-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hp\.gradle\caches\transforms-3\bf848454c8f48a925dac05239b154542\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:44:9-51:19
+249            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+249-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hp\.gradle\caches\transforms-3\bf848454c8f48a925dac05239b154542\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:45:13-82
+250            android:directBootAware="true"
+250-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hp\.gradle\caches\transforms-3\bf848454c8f48a925dac05239b154542\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:46:13-43
+251            android:exported="false" >
+251-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hp\.gradle\caches\transforms-3\bf848454c8f48a925dac05239b154542\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:47:13-37
+252            <intent-filter android:priority="-500" >
+252-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+253                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+253-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+253-->[:firebase_messaging] C:\Users\hp\Videos\divy\mistry\mistry_partner\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+254            </intent-filter>
+255        </service>
+256
+257        <provider
+257-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hp\.gradle\caches\transforms-3\b2335371e5c89d5344e384de4531f59a\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+258            android:name="com.google.firebase.provider.FirebaseInitProvider"
+258-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hp\.gradle\caches\transforms-3\b2335371e5c89d5344e384de4531f59a\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+259            android:authorities="com.Themistry.Service.firebaseinitprovider"
+259-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hp\.gradle\caches\transforms-3\b2335371e5c89d5344e384de4531f59a\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+260            android:directBootAware="true"
+260-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hp\.gradle\caches\transforms-3\b2335371e5c89d5344e384de4531f59a\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+261            android:exported="false"
+261-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hp\.gradle\caches\transforms-3\b2335371e5c89d5344e384de4531f59a\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+262            android:initOrder="100" />
+262-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hp\.gradle\caches\transforms-3\b2335371e5c89d5344e384de4531f59a\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+263
+264        <activity
+264-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hp\.gradle\caches\transforms-3\dd0e7a35c9baa53258d7d9a0b7dd7ddd\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+265            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+265-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hp\.gradle\caches\transforms-3\dd0e7a35c9baa53258d7d9a0b7dd7ddd\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+266            android:exported="false"
+266-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hp\.gradle\caches\transforms-3\dd0e7a35c9baa53258d7d9a0b7dd7ddd\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+267            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+267-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hp\.gradle\caches\transforms-3\dd0e7a35c9baa53258d7d9a0b7dd7ddd\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+268
+269        <meta-data
+269-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\hp\.gradle\caches\transforms-3\40093f50956da5c3a8aef971092f264f\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+270            android:name="com.google.android.gms.version"
+270-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\hp\.gradle\caches\transforms-3\40093f50956da5c3a8aef971092f264f\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+271            android:value="@integer/google_play_services_version" />
+271-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\hp\.gradle\caches\transforms-3\40093f50956da5c3a8aef971092f264f\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+272
+273        <uses-library
+273-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+274            android:name="androidx.window.extensions"
+274-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+275            android:required="false" />
+275-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+276        <uses-library
+276-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+277            android:name="androidx.window.sidecar"
+277-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+278            android:required="false" />
+278-->[androidx.window:window:1.0.0-beta04] C:\Users\hp\.gradle\caches\transforms-3\44411455730c588f6384249ed723b7cb\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+279
+280        <service
+280-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\hp\.gradle\caches\transforms-3\f62461c016b5d4fa409052298847044b\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+281            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+281-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\hp\.gradle\caches\transforms-3\f62461c016b5d4fa409052298847044b\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+282            android:exported="false" >
+282-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\hp\.gradle\caches\transforms-3\f62461c016b5d4fa409052298847044b\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+283            <meta-data
+283-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\hp\.gradle\caches\transforms-3\f62461c016b5d4fa409052298847044b\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+284                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+284-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\hp\.gradle\caches\transforms-3\f62461c016b5d4fa409052298847044b\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+285                android:value="cct" />
+285-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\hp\.gradle\caches\transforms-3\f62461c016b5d4fa409052298847044b\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+286        </service>
+287        <service
+287-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\hp\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+288            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+288-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\hp\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+289            android:exported="false"
+289-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\hp\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+290            android:permission="android.permission.BIND_JOB_SERVICE" >
+290-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\hp\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+291        </service>
+292
+293        <receiver
+293-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\hp\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+294            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+294-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\hp\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+295            android:exported="false" />
+295-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\hp\.gradle\caches\transforms-3\2b1fc57c562c60b6a384768e6c79b030\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+296    </application>
+297
+298</manifest>
